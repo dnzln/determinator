@@ -1,0 +1,243 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Inconsolata", monospace;
+  line-height: 1.5;
+  color: #494949;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px !important;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #fffdf6;
+  padding: 0;
+  margin: 0;
+}
+
+.main-header {
+  width: 100%;
+  background-color: #494949;
+  color: #fff;
+}
+
+.header-wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.main-heading {
+  margin: 0;
+}
+
+.user-interface-list {
+  list-style: none;
+  margin: 20px 30px;
+  padding: 0;
+}
+
+.user-interface-list a {
+  color: #fffdf6;
+}
+
+.main-content {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-block {
+  margin: 50px 0;
+}
+
+.how-to-block {
+  margin-bottom: 50px;
+}
+
+.site-desc {
+  font-size: 18px;
+}
+
+.how-to-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.how-to-list .step {
+  max-width: 260px;
+  padding: 0px;
+  margin: 20px auto 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.step-text {
+  background-color: #ece8d9;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.main-footer {
+  width: 100%;
+  height: 70px;
+  background-color: #494949;
+}
+
+.footer-wrapper {
+  max-width: 950px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.footer-wrapper a {
+  color: #fff;
+}
+
+.app-block {
+  width: 95%;
+  background-color: #faf6e9;
+  margin: 0 auto 50px;
+}
+
+.app-block h3 {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+.app-step-0 .user-interface-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.app-step-0 .user-interface-list a {
+  color: #073b4c;
+}
+
+.app-step-0,
+.app-step-1,
+.app-step-2,
+.app-step-3,
+.app-step-4 {
+  padding: 40px;
+}
+
+#user-image-first,
+#user-image-second {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+}
+
+.choose {
+  width: 200px;
+  height: 200px;
+  border: none;
+  font-size: 24px;
+  background-color: #555;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.choose:hover {
+  cursor: pointer;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 7px;
+  left: 50%;
+  margin-left: -153px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #494949;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: #494949;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 450px) {
+  .header-wrapper {
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buttons {
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .buttons button {
+    display: inline-block;
+    width: 250px;
+    margin: 10px auto 0;
+  }
+}
